@@ -190,10 +190,12 @@
                 <h2>Contact</h2>
 
                 <form action="https://api.web3forms.com/submit" method="POST">
-                  <input type="hidden" name="access_key" value="b7f5befe-9098-4d43-8489-057589657bcb">
-                    <input type="text" placeholder="Votre nom">
-                    <input type="email" placeholder="Votre email">
-                    <textarea placeholder="Votre message"></textarea>
+                    <input type="hidden" name="access_key" value="b7f5befe-9098-4d43-8489-057589657bcb">
+                    
+                    <input type="text" name="name" placeholder="Votre nom" required>
+                    <input type="email" name="email" placeholder="Votre email" required>
+                    <textarea name="message" placeholder="Votre message" required></textarea>
+                    
                     <button type="submit">Envoyer</button>
                 </form>
             </div>
